@@ -3,7 +3,7 @@
 #include <windows.h>
 
 int main(void) {
-    int nb = 0;
+    int nb = 64;
 
     printf(
         " _______           __________                 .___         _________ .__    .__.__  .__   \n"
@@ -18,8 +18,14 @@ int main(void) {
         displayMenu();
         scanf("%d", &nb);
         printf("%d\n", nb);
-        getUserSelection(nb);
-    } while (nb != 1);
+        getUserSelectionForAllMenu(nb);
+        if (nb != 1) {
+            printf("\nPress ENTER to return to the menu...");
+            getchar(); // Pour consommer le '\n'
+            getchar(); // Attendre que l'utilisateur appuie sur Entrée
+            system("cls"); // Efface avant de revenir au menu
+        }
+    } while (nb != 64);
 
     printf("Exiting program...\n");
     return 0;

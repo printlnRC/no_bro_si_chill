@@ -2,6 +2,6 @@
 #define MENU_H
 
 void displayMenu();
-int getUserSelection(int selection);    
+int getUserSelectionForAllMenu(int selection);    
 
 #endif
