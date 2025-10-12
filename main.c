@@ -17,6 +17,7 @@ int main(void) {
     do {
         displayMenu();
         scanf("%d", &nb);
+        printf("%d\n", nb);
         getUserSelection(nb);
     } while (nb != 1);
 
