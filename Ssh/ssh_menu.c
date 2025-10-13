@@ -17,10 +17,13 @@ void ssh_menu(void) {
 
         switch (choice) {
         case 1 :
-            printf("Ssh connect.\n");
+            printf("Ssh connect with no key.\n");
             ssh_connect();
         break;
         case 2 :
+            printf("Ssh connect with key.\n");
+        break;
+        case 3 :
             printf("Back.\n");
             break;
         default:

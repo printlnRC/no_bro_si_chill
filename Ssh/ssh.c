@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void ssh_connect(void);
 
@@ -12,4 +13,6 @@ void ssh_connect(void) {
     scanf("%s", ip);
 
     printf("Connecting to %s@%s\n", user, ip);
+    const char *command = "ssh -Y %s@%s";
+    system(command);
 }
