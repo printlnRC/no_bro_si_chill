@@ -1,4 +1,5 @@
 #include "ssh.h"
+#include "menu.h"
 
 #include <stdio.h>
 #include <stdlib.h> 
@@ -9,8 +10,9 @@ void ssh_menu(void) {
 
     do {
         printf("=== SSH Menu ===\n");
-        printf("1. Connect to SSH\n");
-        printf("2. Back to Main Menu\n");
+        printf("[1] Connect to SSH\n");
+        printf("[2] Connect to SSH with Key\n");
+        printf("[3] Back to Main Menu\n");
         printf("Choose an option: ");
         scanf("%d", &choice);
         getchar(); // pour consommer le \n restant
@@ -31,5 +33,5 @@ void ssh_menu(void) {
             break;
         }
 
-    } while (choice != 4);
+    } while (choice != 3);
 }
