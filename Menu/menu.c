@@ -19,11 +19,9 @@ int getUserSelectionForAllMenu(int selection) {
     switch (selection)
     {
     case 1 :
-        printf("Menu of ssh.\n");
         ssh_menu();
         break;
     case 2 :
-        printf("Nmap.\n");
         nmap_menu();
         break;
     case 64 :
