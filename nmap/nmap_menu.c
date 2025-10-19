@@ -1,4 +1,5 @@
 #include "nmap.h"
+#include "display.h"
 
 #include <stdio.h>
 #include <stdlib.h> 
@@ -7,6 +8,7 @@ void nmap_menu(void) {
     int choice = 0;
 
     do {
+        print_logo();
        printf("=== NMAP Menu ===\n");
 
     printf("%-40s%-40s%-40s%-40s\n",
