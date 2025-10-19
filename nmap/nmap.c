@@ -69,7 +69,7 @@ void nmap_all_port_scan(void) {
 void nmap_specifed_port_scan(void) {
     char ip[50];
     char ports[50];
-    char command[100];
+    char command[256];
 
     printf("Enter IP address to scan specified port : ");
     scanf("%49s", ip);

@@ -1,6 +1,6 @@
 #include "ssh.h"
 #include "menu.h"
-
+#include "display.h"
 #include <stdio.h>
 #include <stdlib.h> 
 
@@ -9,6 +9,7 @@ void ssh_menu(void) {
     int choice = 0;
 
     do {
+        print_logo();
         printf("=== SSH Menu ===\n");
         printf("[1] Connect to SSH\n");
         printf("[2] Connect to SSH with Key\n");
