@@ -2,10 +2,10 @@
 CC = gcc
 
 # Options de compilation
-CFLAGS = -Wall -Wextra -I Ssh -I Menu -I nmap -I Display
+CFLAGS = -Wall -Wextra -I Ssh -I Menu -I nmap -I Display -I Wpscan
 
 # Fichiers sources
-SRC = main.c Ssh/ssh.c Ssh/ssh_menu.c Menu/menu.c Nmap/nmap.c Nmap/nmap_menu.c Display/display.c
+SRC = main.c Ssh/ssh.c Ssh/ssh_menu.c Menu/menu.c Nmap/nmap.c Nmap/nmap_menu.c Display/display.c Wpscan/wpscan.c Wpscan/wpscan_menu.c
 
 # Fichiers objets
 OBJ = $(SRC:.c=.o)
