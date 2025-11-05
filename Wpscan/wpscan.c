@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 void wpscan_scan(void) {
     char url[100];
     char command[200];
